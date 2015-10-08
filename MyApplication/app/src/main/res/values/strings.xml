@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">Tourplanner</string>
-
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_splash_screen">Splash_screen</string>
-</resources>
