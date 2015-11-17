@@ -1,0 +1,140 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.tab2">
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:textSize="30sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Dinner"
+    android:id="@+id/textView4"
+    android:gravity="center" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Colorado Fondue "
+    android:id="@+id/checkBox"
+    android:checked="false" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Cheesecake Factory "
+    android:id="@+id/checkBox2"
+    android:checked="false" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Texas De Brazil "
+    android:id="@+id/checkBox3"
+    android:checked="false" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Fuddruckers"
+    android:id="@+id/checkBox4"
+    android:checked="false" />
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Victoria &amp; Albert’s "
+    android:id="@+id/checkBox35"
+    android:checked="false" />
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@android:color/darker_gray"
+    android:layout_marginTop="5dp" />
+
+<TextView
+    android:layout_marginTop="10dp"
+    android:textSize="30sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Activities"
+    android:id="@+id/textView3"
+    android:gravity="center" />
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="SAK Comedy Lab "
+    android:id="@+id/checkBox6"
+    android:checked="false" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Universal CityWalk "
+    android:id="@+id/checkBox7"
+    android:checked="false" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Jellyrolls"
+    android:id="@+id/checkBox8"
+    android:checked="false" />
+
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="House of Blues "
+    android:id="@+id/checkBox9"
+    android:checked="false" />
+<CheckBox
+    android:layout_marginTop="10dp"
+    android:textSize="20sp"
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:text="Icebar Orlando	 "
+    android:id="@+id/checkBox10"
+    android:checked="false" />
+
+
+
+</LinearLayout>
+
+    </FrameLayout>

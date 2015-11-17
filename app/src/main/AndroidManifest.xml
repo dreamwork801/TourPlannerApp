@@ -5,12 +5,12 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Plan it"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Splash_screen"
-            android:label="@string/title_activity_splash_screen"
+            android:label="Plan it"
             android:theme="@style/AppTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,12 +20,27 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:label="Plan it"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
         <activity
             android:name=".activity_list"
-            android:label="@string/title_activity_activity_list"
+            android:label="Orlando"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".NewYork_Activities"
+            android:label="New York"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".LA_Activities"
+            android:label="Los Angeles"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Tampa_activities"
+            android:label="Tampa"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>

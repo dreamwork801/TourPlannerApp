@@ -2,39 +2,25 @@
 <items version="2" >
 
     <item
-        jar="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jar="/Users/Jorge/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1-a366d765c7ca28162f99a3742c7aaf3b84010423.jar" />
+        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
+        <dex dex="/Users/Jorge/Documents/Android /TourPlannerApp/app/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-2e29048e547a53c36dd7de7862a8ad0634352803.jar" />
     </item>
     <item
-        jar="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jar="/Users/Jorge/Documents/Android /TourPlannerApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
-        <dex dex="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/pre-dexed/debug/classes-a1131126ff97810b5a131b962c7898749ede116d.jar" />
+        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
+        <dex dex="/Users/Jorge/Documents/Android /TourPlannerApp/app/build/intermediates/pre-dexed/debug/classes-7eab47ba7eb2d0bd2d74085e407c8709284559cb.jar" />
     </item>
     <item
-        jar="/Users/Jorge/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jar="/Users/Jorge/Documents/Android /TourPlannerApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
-        <dex dex="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/pre-dexed/debug/support-annotations-23.0.1-61296b15dac6fa56141d9d4b7e50d7ea73308350.jar" />
-    </item>
-    <item
-        jar="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/pre-dexed/debug/classes-25fba0e942056dc802ebd53a62debf6c9356d996.jar" />
-    </item>
-    <item
-        jar="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/Jorge/Documents/Tour_Planner/app/build/intermediates/pre-dexed/debug/classes-a400ae5bdce1f960e5a74636bb2e9e53be7861d8.jar" />
+        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
+        <dex dex="/Users/Jorge/Documents/Android /TourPlannerApp/app/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-5c6f15505d6a8093e27975d9f4668a09ad932684.jar" />
     </item>
 
 </items>

@@ -1,5 +1,6 @@
 package com.example.jorge.tour_planner;
 
+import android.net.Uri;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -17,7 +18,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.widget.CheckBox;
 import android.widget.TextView;
+
 
 public class activity_list extends AppCompatActivity {
 
@@ -29,6 +32,9 @@ public class activity_list extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
+    public void onFragmentInteraction(Uri uri){
+        //you can leave it empty
+    }
     private SectionsPagerAdapter mSectionsPagerAdapter;
 
     /**
@@ -53,6 +59,8 @@ public class activity_list extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
@@ -103,7 +111,23 @@ public class activity_list extends AppCompatActivity {
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
-            return PlaceholderFragment.newInstance(position + 1);
+          //  return PlaceholderFragment.newInstance(position + 1);
+            if(position == 0) // if the position is 0 we are returning the First tab
+            {
+                tab1 tab1 = new tab1();
+                return tab1;
+            }
+            if (position == 1)             // As we are having 2 tabs if the position is now 0 it must be 1 so we are returning second tab
+            {
+                tab2 tab2 = new tab2();
+                return tab2;
+            }
+            else{
+                tab3 tab3 = new tab3();
+                return tab3;
+
+            }
+
         }
 
         @Override
@@ -140,12 +164,12 @@ public class activity_list extends AppCompatActivity {
          * Returns a new instance of this fragment for the given section
          * number.
          */
-        public static PlaceholderFragment newInstance(int sectionNumber) {
+        public static Fragment newInstance(int sectionNumber) {
             PlaceholderFragment fragment = new PlaceholderFragment();
             Bundle args = new Bundle();
             args.putInt(ARG_SECTION_NUMBER, sectionNumber);
             fragment.setArguments(args);
-            return fragment;
+           return fragment;
         }
 
         public PlaceholderFragment() {
@@ -157,6 +181,7 @@ public class activity_list extends AppCompatActivity {
             View rootView = inflater.inflate(R.layout.fragment_activity_list, container, false);
             TextView textView = (TextView) rootView.findViewById(R.id.section_label);
             textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
             return rootView;
         }
     }

@@ -1,0 +1,153 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.tab1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Breakfast"
+                android:id="@+id/textView4"
+                android:gravity="center" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Lunch "
+                android:id="@+id/checkBox6"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="eat"
+                android:id="@+id/checkBox7"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Traxx Restaurant "
+                android:id="@+id/checkBox8"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Grub "
+                android:id="@+id/checkBox9"
+                android:checked="false" />
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Morton’s The Steakhouse "
+                android:checked="false" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="5dp" />
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Activities"
+                android:id="@+id/textView3"
+                android:gravity="center" />
+            <CheckBox
+                android:paddingRight="5dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Dearly Departed: The Tragic History of Los Angeles"
+                android:id="@+id/checkBox"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Hollywood Hills Hiking Tour in Los Angeles "
+                android:id="@+id/checkBox2"
+                android:checked="false" />
+
+            <CheckBox
+                android:paddingRight="2dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Los Angeles Sports Car driving Experience "
+                android:id="@+id/checkBox3"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Los Angeles Highlights Tour "
+                android:id="@+id/checkBox4"
+                android:checked="false" />
+
+            <CheckBox
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Whale watching experience with live commentary "
+                android:id="@+id/checkBox5"
+                android:checked="false" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
+
+
+
+
+

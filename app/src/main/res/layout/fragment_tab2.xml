@@ -1,0 +1,149 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.tab2">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_marginTop="10dp"
+        android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Lunch"
+            android:id="@+id/textView4"
+            android:gravity="center" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Sweet Tomatoes"
+            android:id="@+id/checkBox"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Graffity Junktion"
+            android:id="@+id/checkBox2"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Citrus Restaurant"
+            android:id="@+id/checkBox3"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="White Wolf Cafe &amp; Bar "
+            android:id="@+id/checkBox4"
+            android:checked="false" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+        android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Activities"
+            android:id="@+id/textView3"
+            android:gravity="center" />
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Disney Springs "
+            android:id="@+id/checkBox6"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Mall at Millenia "
+            android:id="@+id/checkBox7"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Gatorland"
+            android:id="@+id/checkBox8"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Orlando Eye "
+            android:id="@+id/checkBox9"
+            android:checked="false" />
+        <CheckBox
+            android:layout_marginTop="10dp"
+        android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="iFly Orlando "
+            android:id="@+id/checkBox10"
+            android:checked="false" />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+</FrameLayout>

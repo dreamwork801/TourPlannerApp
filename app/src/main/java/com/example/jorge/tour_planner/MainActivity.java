@@ -25,7 +25,6 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        //dFloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -50,16 +49,18 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.button2:
 // handle button A click;
-                 i=new Intent(getBaseContext(),activity_list.class);
+                 i=new Intent(getBaseContext(),NewYork_Activities.class);
                 startActivity(i);
                 break;
             case R.id.button3:
 // handle button A click;
-                 i=new Intent(getBaseContext(),activity_list.class);
+                 i=new Intent(getBaseContext(),LA_Activities.class);
                 startActivity(i);
                 break;
             case R.id.button4:
 // handle button B click;
+                i=new Intent(getBaseContext(),Tampa_activities.class);
+                startActivity(i);
                 break;
             default:
                 throw new RuntimeException("Unknow button ID");
