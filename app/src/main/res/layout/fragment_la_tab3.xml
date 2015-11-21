@@ -1,6 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.tab1">
+    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.la_tab3">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -20,67 +20,73 @@
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Breakfast"
+                android:text="Dinner"
                 android:id="@+id/textView4"
                 android:gravity="center" />
 
             <CheckBox
+                android:onClick="La_Evening_checkbox"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Dish"
-                android:id="@+id/checkBox"
+                android:id="@+id/la_evening1"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="La_Evening_checkbox"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Cicada"
-                android:id="@+id/checkBox2"
+                android:id="@+id/la_evening2"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="La_Evening_checkbox"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Perch"
-                android:id="@+id/checkBox3"
+                android:id="@+id/la_evening3"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="La_Evening_checkbox"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Next Door Lounge"
-                android:id="@+id/checkBox4"
+                android:id="@+id/la_evening4"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="La_Evening_checkbox"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="The Bistro"
-                android:id="@+id/checkBox5"
+                android:id="@+id/la_evening5"
                 android:checked="false" />
             <CheckBox
+                android:onClick="La_Evening_checkbox"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="LA Chapter"
-                android:id="@+id/checkBox10"
+                android:id="@+id/la_evening6"
                 android:checked="false" />
             <View
                 android:layout_width="match_parent"
@@ -99,45 +105,52 @@
                 android:id="@+id/textView3"
                 android:gravity="center" />
             <CheckBox
+                android:onClick="Evening_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Old Hollywood Bar Crawl"
-                android:id="@+id/checkBox6"
+                android:id="@+id/Evening_activity5"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Evening_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
+                android:paddingRight="16dp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Small-group food walking tour through Old Pasadena"
-                android:id="@+id/checkBox7"
+                android:id="@+id/Evening_activity1"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Evening_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="City of Dark Angels Ghost Tours "
-                android:id="@+id/checkBox8"
+                android:id="@+id/Evening_activity2"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Evening_activity"
                 android:layout_marginTop="10dp"
-                android:textSize="20sp"
+                android:textSize="20dp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="The Groundlings Theatre "
-                android:id="@+id/checkBox9"
+                android:id="@+id/Evening_activity3"
                 android:checked="false" />
             <CheckBox
+                android:id="@+id/Evening_activity4"
+                android:onClick="Evening_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -149,5 +162,9 @@
 
         </LinearLayout>
     </ScrollView>
+    <android.support.design.widget.FloatingActionButton android:id="@+id/fab"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_dialog_info" />
 
 </FrameLayout>

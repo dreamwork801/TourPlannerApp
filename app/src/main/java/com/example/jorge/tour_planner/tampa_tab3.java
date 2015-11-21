@@ -1,13 +1,16 @@
 package com.example.jorge.tour_planner;
 
-import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 
+import java.util.ArrayList;
 
 
 /**
@@ -24,10 +27,45 @@ public class tampa_tab3 extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
+    public static ArrayList<String> getTampa_dinner() {
+        return tampa_dinner;
+    }
+
+    private static ArrayList<String>  tampa_dinner= new ArrayList<String>();
+
+    public static ArrayList<String> getTampa_dinner_activity() {
+        return tampa_dinner_activity;
+    }
+
+    private static ArrayList<String>  tampa_dinner_activity = new ArrayList<String>();
+
+
+    public static void tampa_dinner_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_dinner_activity.add(c.getText().toString());
+        }
+        else
+            tampa_dinner_activity.remove(c.getText().toString());
+    }
+    public static void tampa_dinner(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_dinner.add(c.getText().toString());
+        }
+        else
+            tampa_dinner.add(c.getText().toString());
+
+    }
+
+
+
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-
+    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.tampafab);;
     private OnFragmentInteractionListener mListener;
 
     /**
@@ -55,16 +93,35 @@ public class tampa_tab3 extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
+//        fab = (FloatingActionButton)  getActivity().findViewById(R.id.tampafab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent intent = new Intent(view.getContext(), Tampa_ScrollingActivity.class);
+//                startActivity(intent);
+//            }
+//        });
+
+
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), Tampa_ScrollingActivity.class);
+                startActivity(intent);
+            }
+        });
         return inflater.inflate(R.layout.fragment_tampa_tab3, container, false);
     }
 

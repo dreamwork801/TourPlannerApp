@@ -43,6 +43,13 @@
             android:label="Tampa"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
+        <activity android:name=".LA_itenarary" >
+        </activity>
+        <activity
+            android:name=".Tampa_ScrollingActivity"
+            android:label="@string/title_activity_tampa__scrolling"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
     </application>
 
 </manifest>

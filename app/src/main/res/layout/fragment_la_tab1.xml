@@ -1,6 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.tab1">
+    android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.la_tab1">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,53 +25,58 @@
                 android:gravity="center" />
 
             <CheckBox
+                android:onClick="Breakfast_LA"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:text="Square One Dining"
-                android:id="@+id/checkBox"
+                android:id="@+id/lab1"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Breakfast_LA"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Blu Jam Café"
-                android:id="@+id/checkBox2"
+                android:id="@+id/lab2"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Breakfast_LA"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="The Griddle Café"
-                android:id="@+id/checkBox3"
+                android:id="@+id/lab3"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Breakfast_LA"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Nickel Diner"
-                android:id="@+id/checkBox4"
+                android:id="@+id/lab4"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="Breakfast_LA"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Jacks N Joe"
-                android:id="@+id/checkBox5"
+                android:id="@+id/lab5"
                 android:checked="false" />
             <View
                 android:layout_width="match_parent"
@@ -90,45 +95,52 @@
                 android:id="@+id/textView3"
                 android:gravity="center" />
             <CheckBox
+                android:onClick="la_morning_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Disney Land"
-                android:id="@+id/checkBox6"
+                android:id="@+id/la_morning_activity1"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="la_morning_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Universal Studios Hollywood"
-                android:id="@+id/checkBox7"
+                android:id="@+id/la_morning_activity2"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="la_morning_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="The Ultimate Los Angeles Bike Tour "
-                android:id="@+id/checkBox8"
+                android:id="@+id/la_morning_activity3"
                 android:checked="false" />
 
             <CheckBox
+                android:onClick="la_morning_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:text="Hollywood Movie Location Tour "
-                android:id="@+id/checkBox9"
+                android:id="@+id/la_morning_activity4"
                 android:checked="false" />
             <CheckBox
+                android:id="@+id/la_morning_activity5"
+                android:onClick="la_morning_activity"
+                android:paddingRight="16dp"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"

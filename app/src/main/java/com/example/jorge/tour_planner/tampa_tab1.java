@@ -7,7 +7,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 
+import java.util.ArrayList;
 
 
 /**
@@ -23,12 +25,16 @@ public class tampa_tab1 extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
+    private ArrayList<String> Orlando_B = new ArrayList<String>();
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    public tampa_tab1() {
+        // Required empty public constructor
+    }
 
     /**
      * Use this factory method to create a new instance of
@@ -46,10 +52,6 @@ public class tampa_tab1 extends Fragment {
         args.putString(ARG_PARAM2, param2);
         fragment.setArguments(args);
         return fragment;
-    }
-
-    public tampa_tab1() {
-        // Required empty public constructor
     }
 
     @Override
@@ -75,6 +77,77 @@ public class tampa_tab1 extends Fragment {
         }
     }
 
+    public void tampa_breakfast(View v) {
+        boolean checked = ((CheckBox) v).isChecked();
+        String name = ((CheckBox) v).getText().toString();
+
+        switch (v.getId()) {
+
+
+            case R.id.checkBox:
+                if (checked) {
+                    Orlando_B.add(name);
+
+
+                } else {
+                    if (Orlando_B.contains(name))
+                        Orlando_B.remove(name);
+                }
+
+
+                break;
+            case R.id.checkBox2:
+                if (checked) {
+                    Orlando_B.add(name);
+
+                } else {
+                    if (Orlando_B.contains(name))
+                        Orlando_B.remove(name);
+
+                }
+
+
+                break;
+            case R.id.checkBox3:
+                if (checked) {
+                    Orlando_B.add(name);
+
+                } else {
+                    if (Orlando_B.contains(name))
+                        Orlando_B.remove(name);
+
+                }
+
+
+                break;
+            case R.id.checkBox4:
+                if (checked) {
+                    Orlando_B.add(name);
+
+                } else {
+                    if (Orlando_B.contains(name))
+                        Orlando_B.remove(name);
+
+                }
+
+
+                break;
+            case R.id.checkBox5:
+                if (checked) {
+                    Orlando_B.add(name);
+
+                } else {
+                    if (Orlando_B.contains(name))
+                        Orlando_B.remove(name);
+
+                }
+
+
+                break;
+
+
+        }
+    }
 
 
     @Override
@@ -88,7 +161,7 @@ public class tampa_tab1 extends Fragment {
      * fragment to allow an interaction in this fragment to be communicated
      * to the activity and potentially other fragments contained in that
      * activity.
-     * <p/>
+     * <p>
      * See the Android Training lesson <a href=
      * "http://developer.android.com/training/basics/fragments/communicating.html"
      * >Communicating with Other Fragments</a> for more information.

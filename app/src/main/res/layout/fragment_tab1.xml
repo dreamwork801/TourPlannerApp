@@ -25,6 +25,7 @@
         android:gravity="center" />
 
     <CheckBox
+        android:onClick="orlando_breakfast"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -35,6 +36,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -45,6 +47,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -55,6 +58,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -65,6 +69,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -90,6 +95,7 @@
         android:id="@+id/textView3"
         android:gravity="center" />
     <CheckBox
+        android:onClick="orlando_breakfast_activity"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -100,6 +106,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast_activity"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -110,6 +117,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast_activity"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -120,6 +128,7 @@
         android:checked="false" />
 
     <CheckBox
+        android:onClick="orlando_breakfast_activity"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -129,6 +138,7 @@
         android:id="@+id/checkBox9"
         android:checked="false" />
     <CheckBox
+        android:onClick="orlando_breakfast_activity"
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         android:layout_width="wrap_content"
@@ -140,5 +150,6 @@
 
 </LinearLayout>
 </ScrollView>
+
 
 </FrameLayout>
