@@ -1,25 +1,24 @@
 package com.example.jorge.tour_planner;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 public class LA_Activities extends AppCompatActivity {
@@ -32,6 +31,110 @@ public class LA_Activities extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
+
+
+    public static ArrayList<String> getla_dinner() {
+        return la_dinner;
+    }
+
+
+
+    public static ArrayList<String> getla_dinner_activity() {
+        return la_dinner_activity;
+    }
+
+
+    public static ArrayList<String> getla_lunch() {
+        return la_lunch;
+    }
+
+    public static ArrayList<String> getla_breakfast_activity() {
+        return la_breakfast_activity;
+    }
+
+    public static ArrayList<String> getla_lunch_activity() {
+        return la_lunch_activity;
+    }
+
+    public static ArrayList<String> getla_breakfast() {
+        return la_breakfast;
+    }
+
+    private static ArrayList<String>  la_breakfast= new ArrayList<String>();
+    private static ArrayList<String>  la_lunch= new ArrayList<String>();
+    private static ArrayList<String>  la_dinner= new ArrayList<String>();
+
+    private static ArrayList<String>  la_breakfast_activity = new ArrayList<String>();
+    private static ArrayList<String>  la_lunch_activity = new ArrayList<String>();
+    private static ArrayList<String>  la_dinner_activity = new ArrayList<String>();
+
+
+    public static void la_breakfast_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            la_breakfast_activity.add(c.getText().toString());
+        }
+        else
+            la_breakfast_activity.remove(c.getText().toString());
+    }
+
+
+    public static void la_lunch_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            la_lunch_activity.add(c.getText().toString());
+        }
+        else
+            la_lunch_activity.remove(c.getText().toString());
+    }
+
+    public static void la_dinner_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            la_dinner_activity.add(c.getText().toString());
+        }
+        else
+            la_dinner_activity.remove(c.getText().toString());
+    }
+
+
+
+    public static void la_breakfast(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            la_breakfast.add(c.getText().toString());
+        }
+        else
+            la_breakfast.remove(c.getText().toString());
+
+    } public static void la_lunch(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            la_lunch.add(c.getText().toString());
+        }
+        else
+            la_lunch.remove(c.getText().toString());
+
+    } public static void la_dinner(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            la_dinner.add(c.getText().toString());
+        }
+        else
+            la_dinner.remove(c.getText().toString());
+
+    }
+    public  void itineraryfab(View v){
+
+        Intent intent = new Intent(this, La_Scrolling.class);
+        startActivity(intent);
+    }
     public void onFragmentInteraction(Uri uri){
         //you can leave it empty
     }

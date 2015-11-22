@@ -1,28 +1,28 @@
 package com.example.jorge.tour_planner;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 
 public class NewYork_Activities extends AppCompatActivity {
+
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -31,7 +31,115 @@ public class NewYork_Activities extends AppCompatActivity {
      * loaded fragment in memory. If this becomes too memory intensive, it
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
+     *
+     *
      */
+
+    public static ArrayList<String> getny_breakfast() {
+        return ny_breakfast;
+    }
+
+    public static ArrayList<String> getny_breakfast_activity() {
+        return ny_breakfast_activity;
+    }
+
+    public static ArrayList<String> getny_lunch() {
+        return ny_lunch;
+    }
+
+
+    public static ArrayList<String> getny_lunch_activity() {
+        return ny_lunch_activity;
+    }
+
+
+    public static ArrayList<String> getny_dinner() {
+        return ny_dinner;
+    }
+
+
+
+    public static ArrayList<String> getny_dinner_activity() {
+        return ny_dinner_activity;
+    }
+
+
+    private static ArrayList<String>  ny_breakfast= new ArrayList<String>();
+    private static ArrayList<String>  ny_lunch= new ArrayList<String>();
+    private static ArrayList<String>  ny_dinner= new ArrayList<String>();
+
+    private static ArrayList<String>  ny_breakfast_activity = new ArrayList<String>();
+    private static ArrayList<String>  ny_lunch_activity = new ArrayList<String>();
+    private static ArrayList<String>  ny_dinner_activity = new ArrayList<String>();
+
+
+    public static void ny_breakfast_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            ny_breakfast_activity.add(c.getText().toString());
+        }
+        else
+            ny_breakfast_activity.remove(c.getText().toString());
+    }
+
+
+    public static void ny_lunch_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            ny_lunch_activity.add(c.getText().toString());
+        }
+        else
+            ny_lunch_activity.remove(c.getText().toString());
+    }
+
+    public static void ny_dinner_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            ny_dinner_activity.add(c.getText().toString());
+        }
+        else
+            ny_dinner_activity.remove(c.getText().toString());
+    }
+
+
+
+    public static void ny_breakfast(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            ny_breakfast.add(c.getText().toString());
+        }
+        else
+            ny_breakfast.remove(c.getText().toString());
+
+    } public static void ny_lunch(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            ny_lunch.add(c.getText().toString());
+        }
+        else
+            ny_lunch.remove(c.getText().toString());
+
+    }
+    public static void ny_dinner(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            ny_dinner.add(c.getText().toString());
+        }
+        else
+            ny_dinner.remove(c.getText().toString());
+
+    }
+    public  void itineraryfab(View v){
+
+        Intent intent = new Intent(this, ScrollingActivity.class);
+        startActivity(intent);
+    }
     public void onFragmentInteraction(Uri uri){
         //you can leave it empty
     }

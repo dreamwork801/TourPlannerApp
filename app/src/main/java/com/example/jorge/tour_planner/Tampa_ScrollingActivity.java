@@ -1,5 +1,7 @@
 package com.example.jorge.tour_planner;
 
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -29,23 +31,149 @@ public class Tampa_ScrollingActivity extends AppCompatActivity {
             }
         });
 
-        ArrayList<String> itinerary = new ArrayList<>();
-        tampa_tab3 t3 = new tampa_tab3();
-        itinerary = t3.getTampa_dinner();
+        ArrayList<String> breakfast = new ArrayList<>();
+        Tampa_activities tb = new Tampa_activities();
+        breakfast = tb.getTampa_breakfast();
 
-        View linearLayout =  findViewById(R.id.info);
+ ArrayList<String> lunch = new ArrayList<>();
+        Tampa_activities tl = new Tampa_activities();
+        lunch = tl.getTampa_lunch();
+
+
+ ArrayList<String> dinner = new ArrayList<>();
+        Tampa_activities td = new Tampa_activities();
+        dinner = td.getTampa_dinner();
+
+
+ ArrayList<String> bactvity = new ArrayList<>();
+        Tampa_activities ba = new Tampa_activities();
+        bactvity = ba.getTampa_breakfast_activity();
+
+ ArrayList<String> lactivity = new ArrayList<>();
+        Tampa_activities la = new Tampa_activities();
+        lactivity = la.getTampa_lunch_activity();
+
+ ArrayList<String> dactivity = new ArrayList<>();
+        Tampa_activities da = new Tampa_activities();
+        dactivity = da.getTampa_dinner_activity();
+
+        View linearLayout =  findViewById(R.id.tampa_itinerary);
         //LinearLayout layout = (LinearLayout) findViewById(R.id.info);
 
-        for(int i =0; i <itinerary.size();i++){
+        TextView b = new TextView(this);
+        b.setText("Breakfast");
+        b.setTextSize(40);
+        b.setTextColor(Color.BLACK);
+        ((LinearLayout) linearLayout).addView(b);
+
+
+        for(int i =0; i <breakfast.size();i++){
 
             TextView valueTV = new TextView(this);
-            valueTV.setText("hallo hallo");
+            valueTV.setText(breakfast.get(i));
+            valueTV.setTextSize(25);
+            valueTV.setTypeface(null, Typeface.BOLD);
             valueTV.setId(i);
             ((LinearLayout) linearLayout).addView(valueTV);
 
         }
 
-        //valueTV.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,LayoutParams.WRAP_CONTENT));
+        TextView bactivity = new TextView(this);
+        bactivity.setText("Breakfast Activity");
+        bactivity.setTextSize(40);
+        bactivity.setTextColor(Color.BLACK);
+        ((LinearLayout) linearLayout).addView(bactivity);
+
+
+        for(int i =0; i <bactvity.size();i++){
+
+            TextView valueTV = new TextView(this);
+            valueTV.setText(bactvity.get(i));
+            valueTV.setTextSize(25);
+
+            valueTV.setTypeface(null, Typeface.BOLD);
+            valueTV.setId(i);
+            ((LinearLayout) linearLayout).addView(valueTV);
+
+        }
+
+        TextView l = new TextView(this);
+        l.setText("Lunch");
+        l.setTextSize(40);
+        l.setTextColor(Color.BLACK);
+        ((LinearLayout) linearLayout).addView(l);
+
+
+        for(int i =0; i <lunch.size();i++){
+
+            TextView valueTV = new TextView(this);
+            valueTV.setText(lunch.get(i));
+            valueTV.setTextSize(25);
+
+            valueTV.setTypeface(null, Typeface.BOLD);
+            valueTV.setId(i);
+            ((LinearLayout) linearLayout).addView(valueTV);
+
+        }
+
+        TextView luncha = new TextView(this);
+        luncha.setText("Lunch");
+        luncha.setTextSize(40);
+        luncha.setTextColor(Color.BLACK);
+        ((LinearLayout) linearLayout).addView(luncha);
+
+
+        for(int i =0; i <lactivity.size();i++){
+
+            TextView valueTV = new TextView(this);
+            valueTV.setText(lactivity.get(i));
+            valueTV.setTextSize(25);
+
+            valueTV.setTypeface(null, Typeface.BOLD);
+            valueTV.setId(i);
+            ((LinearLayout) linearLayout).addView(valueTV);
+
+        }
+
+
+    TextView tdinner = new TextView(this);
+        tdinner.setText("Dinner");
+        tdinner.setTextSize(40);
+        tdinner.setTextColor(Color.BLACK);
+        ((LinearLayout) linearLayout).addView(tdinner);
+
+
+        for(int i =0; i <dinner.size();i++){
+
+            TextView valueTV = new TextView(this);
+            valueTV.setText(dinner.get(i));
+            valueTV.setTextSize(25);
+
+            valueTV.setTypeface(null, Typeface.BOLD);
+            valueTV.setId(i);
+            ((LinearLayout) linearLayout).addView(valueTV);
+
+        }
+        TextView tdinneractivity = new TextView(this);
+        tdinneractivity.setText("Dinner Activity ");
+        tdinneractivity.setTextColor(Color.BLACK);
+        tdinneractivity.setTextSize(40);
+        ((LinearLayout) linearLayout).addView(tdinneractivity);
+
+
+        for(int i =0; i <dactivity.size();i++){
+
+            TextView valueTV = new TextView(this);
+            valueTV.setText(dactivity.get(i));
+            valueTV.setTextSize(25);
+
+            valueTV.setTypeface(null, Typeface.BOLD);
+            valueTV.setId(i);
+            ((LinearLayout) linearLayout).addView(valueTV);
+
+        }
+
+
 
 
 

@@ -1,25 +1,24 @@
 package com.example.jorge.tour_planner;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 public class activity_list extends AppCompatActivity {
@@ -32,6 +31,110 @@ public class activity_list extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
+
+
+    public static ArrayList<String> getorlando_dinner() {
+        return orlando_dinner;
+    }
+
+
+
+    public static ArrayList<String> getorlando_dinner_activity() {
+        return orlando_dinner_activity;
+    }
+
+
+    public static ArrayList<String> getorlando_lunch() {
+        return orlando_lunch;
+    }
+
+    public static ArrayList<String> getorlando_breakfast_activity() {
+        return orlando_breakfast_activity;
+    }
+
+    public static ArrayList<String> getorlando_lunch_activity() {
+        return orlando_lunch_activity;
+    }
+
+    public static ArrayList<String> getorlando_breakfast() {
+        return orlando_breakfast;
+    }
+
+    private static ArrayList<String>  orlando_breakfast= new ArrayList<String>();
+    private static ArrayList<String>  orlando_lunch= new ArrayList<String>();
+    private static ArrayList<String>  orlando_dinner= new ArrayList<String>();
+
+    private static ArrayList<String>  orlando_breakfast_activity = new ArrayList<String>();
+    private static ArrayList<String>  orlando_lunch_activity = new ArrayList<String>();
+    private static ArrayList<String>  orlando_dinner_activity = new ArrayList<String>();
+
+
+    public static void orlando_breakfast_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            orlando_breakfast_activity.add(c.getText().toString());
+        }
+        else
+            orlando_breakfast_activity.remove(c.getText().toString());
+    }
+
+
+    public static void orlando_lunch_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            orlando_lunch_activity.add(c.getText().toString());
+        }
+        else
+            orlando_lunch_activity.remove(c.getText().toString());
+    }
+
+    public static void orlando_dinner_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            orlando_dinner_activity.add(c.getText().toString());
+        }
+        else
+            orlando_dinner_activity.remove(c.getText().toString());
+    }
+
+
+
+    public static void orlando_breakfast(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            orlando_breakfast.add(c.getText().toString());
+        }
+        else
+            orlando_breakfast.remove(c.getText().toString());
+
+    } public static void orlando_lunch(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            orlando_lunch.add(c.getText().toString());
+        }
+        else
+            orlando_lunch.remove(c.getText().toString());
+
+    } public static void orlando_dinner(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            orlando_dinner.add(c.getText().toString());
+        }
+        else
+            orlando_dinner.remove(c.getText().toString());
+
+    }
+    public  void itineraryfab(View v){
+
+        Intent intent = new Intent(this, Orlando_Scrolling.class);
+        startActivity(intent);
+    }
     public void onFragmentInteraction(Uri uri){
         //you can leave it empty
     }

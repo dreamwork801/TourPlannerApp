@@ -25,7 +25,7 @@
                 android:gravity="center" />
 
             <CheckBox
-                android:onClick="Breakfast_LA"
+                android:onClick="la_breakfast"
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -36,7 +36,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="Breakfast_LA"
+                android:onClick="la_breakfast"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="Breakfast_LA"
+                android:onClick="la_breakfast"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -58,7 +58,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="Breakfast_LA"
+                android:onClick="la_breakfast"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -69,7 +69,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="Breakfast_LA"
+                android:onClick="la_breakfast"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -95,7 +95,7 @@
                 android:id="@+id/textView3"
                 android:gravity="center" />
             <CheckBox
-                android:onClick="la_morning_activity"
+                android:onClick="la_breakfast_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="la_morning_activity"
+                android:onClick="la_breakfast_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -117,7 +117,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="la_morning_activity"
+                android:onClick="la_breakfast_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -128,7 +128,7 @@
                 android:checked="false" />
 
             <CheckBox
-                android:onClick="la_morning_activity"
+                android:onClick="la_breakfast_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
@@ -139,14 +139,15 @@
                 android:checked="false" />
             <CheckBox
                 android:id="@+id/la_morning_activity5"
-                android:onClick="la_morning_activity"
+                android:onClick="la_breakfast_activity"
                 android:paddingRight="16dp"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp"
                 android:text="Lost Angeles Horseback – Riding Tour to the Hollywood Sign "
+
                 android:checked="false" />
 
 

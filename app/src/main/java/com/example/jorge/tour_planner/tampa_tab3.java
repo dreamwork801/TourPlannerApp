@@ -3,7 +3,6 @@ package com.example.jorge.tour_planner;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,7 +55,7 @@ public class tampa_tab3 extends Fragment {
             tampa_dinner.add(c.getText().toString());
         }
         else
-            tampa_dinner.add(c.getText().toString());
+            tampa_dinner.remove(c.getText().toString());
 
     }
 
@@ -65,7 +64,7 @@ public class tampa_tab3 extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.tampafab);;
+    //FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.tampafab);;
     private OnFragmentInteractionListener mListener;
 
     /**
@@ -114,15 +113,20 @@ public class tampa_tab3 extends Fragment {
         // Inflate the layout for this fragment
 
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                Intent intent = new Intent(view.getContext(), Tampa_ScrollingActivity.class);
-                startActivity(intent);
-            }
-        });
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                Intent intent = new Intent(view.getContext(), Tampa_ScrollingActivity.class);
+//                startActivity(intent);
+//            }
+//        });
         return inflater.inflate(R.layout.fragment_tampa_tab3, container, false);
+    }
+    public  void itineraryfab(View v){
+
+                        Intent intent = new Intent(v.getContext(), Tampa_ScrollingActivity.class);
+                         startActivity(intent);
     }
 
     // TODO: Rename method, update argument and hook method into UI event

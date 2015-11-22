@@ -1,25 +1,24 @@
 package com.example.jorge.tour_planner;
 
+import android.content.Intent;
 import android.net.Uri;
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-
 import android.widget.CheckBox;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 public class Tampa_activities extends AppCompatActivity {
@@ -32,6 +31,108 @@ public class Tampa_activities extends AppCompatActivity {
      * may be best to switch to a
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
+    public static ArrayList<String> getTampa_dinner() {
+        return tampa_dinner;
+    }
+
+
+
+    public static ArrayList<String> getTampa_dinner_activity() {
+        return tampa_dinner_activity;
+    }
+
+
+    public static ArrayList<String> getTampa_lunch() {
+        return tampa_lunch;
+    }
+
+    public static ArrayList<String> getTampa_breakfast_activity() {
+        return tampa_breakfast_activity;
+    }
+
+    public static ArrayList<String> getTampa_lunch_activity() {
+        return tampa_lunch_activity;
+    }
+
+    public static ArrayList<String> getTampa_breakfast() {
+        return tampa_breakfast;
+    }
+
+    private static ArrayList<String>  tampa_breakfast= new ArrayList<String>();
+    private static ArrayList<String>  tampa_lunch= new ArrayList<String>();
+    private static ArrayList<String>  tampa_dinner= new ArrayList<String>();
+
+    private static ArrayList<String>  tampa_breakfast_activity = new ArrayList<String>();
+    private static ArrayList<String>  tampa_lunch_activity = new ArrayList<String>();
+    private static ArrayList<String>  tampa_dinner_activity = new ArrayList<String>();
+
+
+    public static void tampa_breakfast_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_breakfast_activity.add(c.getText().toString());
+        }
+        else
+            tampa_breakfast_activity.remove(c.getText().toString());
+    }
+
+
+    public static void tampa_lunch_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_lunch_activity.add(c.getText().toString());
+        }
+        else
+            tampa_lunch_activity.remove(c.getText().toString());
+    }
+
+    public static void tampa_dinner_activity(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_dinner_activity.add(c.getText().toString());
+        }
+        else
+            tampa_dinner_activity.remove(c.getText().toString());
+    }
+
+
+
+    public static void tampa_breakfast(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_breakfast.add(c.getText().toString());
+        }
+        else
+            tampa_breakfast.remove(c.getText().toString());
+
+    } public static void tampa_lunch(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_lunch.add(c.getText().toString());
+        }
+        else
+            tampa_lunch.remove(c.getText().toString());
+
+    } public static void tampa_dinner(View v){
+        CheckBox c = (CheckBox)v;
+        if(c.isChecked()) {
+            c.getText();
+            tampa_dinner.add(c.getText().toString());
+        }
+        else
+            tampa_dinner.remove(c.getText().toString());
+
+    }
+    public  void itineraryfab(View v){
+
+        Intent intent = new Intent(this, Tampa_ScrollingActivity.class);
+        startActivity(intent);
+    }
     public void onFragmentInteraction(Uri uri){
         //you can leave it empty
     }

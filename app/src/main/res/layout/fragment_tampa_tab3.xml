@@ -1,5 +1,6 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+
     android:layout_height="match_parent" tools:context="com.example.jorge.tour_planner.tampa_tab3">
 
     <ScrollView
@@ -183,23 +184,17 @@
                 android:onClick="tampa_dinner_activity"
                 android:layout_marginTop="10dp"
                 android:textSize="20sp"
+                android:layout_height="wrap_content"
                 android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                android:layout_marginBottom="60dp"
                 android:text="Seminole Hard Rock Casino Tampa"
                 android:id="@+id/checkBox14"
                 android:checked="false" />
 
-
-
-
         </LinearLayout>
 
     </ScrollView>
-    <android.support.design.widget.FloatingActionButton android:id="@+id/tampafab"
-        android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end" android:layout_margin="@dimen/fab_margin"
-        android:src="@android:drawable/ic_dialog_info" />
+
 
 
 

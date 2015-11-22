@@ -47,7 +47,32 @@
         </activity>
         <activity
             android:name=".Tampa_ScrollingActivity"
-            android:label="@string/title_activity_tampa__scrolling"
+            android:label="Tampa Itinerary"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".tabs_page"
+            android:label="@string/title_activity_tabs_page"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".ScrollingActivity"
+            android:label="@string/title_activity_scrolling"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".Orlando_Scrolling"
+            android:label="@string/title_activity_orlando__scrolling"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".La_Scrolling"
+            android:label="@string/title_activity_la__scrolling"
             android:theme="@style/AppTheme.NoActionBar" >
         </activity>
     </application>
